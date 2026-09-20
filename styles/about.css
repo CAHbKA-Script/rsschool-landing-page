@@ -1,0 +1,40 @@
+.about__images {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 1060px;
+  gap: 40px;
+
+  >div {
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+  }
+
+  >div:nth-child(1),
+  >div:nth-child(4) {
+    height: 590px;
+    width: 660px;
+  }
+
+  >div:nth-child(2),
+  >div:nth-child(3) {
+    height: 430px;
+    width: 660px;
+  }
+
+  >div:nth-child(1) {
+    background-image: url(./../images/about-imsges/about-1.svg);
+  }
+  >div:nth-child(2) {
+    background-image: url(./../images/about-imsges/about-2.svg);
+  }
+  >div:nth-child(3) {
+    background-image: url(./../images/about-imsges/about-3.svg);
+  }
+  >div:nth-child(4) {
+    background-image: url(./../images/about-imsges/about-4.svg);
+  }
+}

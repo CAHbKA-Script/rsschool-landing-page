@@ -1,0 +1,78 @@
+#favorite-coffee {
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .slider {
+    position: relative;
+
+    .slider__arrow {
+      position: absolute;
+      padding: 18px;
+      border-radius: 50%;
+      border: 1px solid var(--border-inverse-color);
+      top: 290px;
+      right: 4px;
+      transition: background .3s ease-in-out;
+
+      svg path {
+        transition: stroke .3s ease-in-out;
+      }
+
+      &.left-arrow {
+        transform: rotate(180deg);
+        right: auto;
+        left: 4px;
+      }
+
+      &:hover {
+        background-color: var(--container-bgc);
+
+        svg path {
+          stroke: var(--text-inverse-color);
+        }
+      }
+    }
+
+    .slider-items {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+
+      .slider-item {
+        display: none;
+      }
+      
+      .slider-item--active {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 480px;
+        text-align: center;
+
+        div {
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .slider__lines {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 40px;
+
+      .slider-line {
+        background-color: var(--border-primary-color);
+        height: 4px;
+        width: 40px;
+        border-radius: 100px;
+
+        &.slider-line--active {
+          background-color: var(--border-inverse-color);
+        }
+      }
+    }
+  }
+}
