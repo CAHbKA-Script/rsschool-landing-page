@@ -1,0 +1,79 @@
+#favorite-coffee {
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .slider {
+    position: relative;
+
+    .slider__arrow {
+      position: absolute;
+      padding: 18px;
+      border-radius: 50%;
+      border: 1px solid var(--border-inverse-color);
+      top: 290px;
+      right: 4px;
+      transition: background .3s ease-in-out;
+
+      svg path {
+        transition: stroke .3s ease-in-out;
+      }
+
+      &.left-arrow {
+        transform: rotate(180deg);
+        right: auto;
+        left: 4px;
+      }
+
+      &:hover {
+        background-color: var(--container-bgc);
+
+        svg path {
+          stroke: var(--text-inverse-color);
+        }
+      }
+    }
+
+    .slider-items {
+      display: flex;
+      gap: 40px;
+      max-width: 480px;
+      margin: 0 auto;
+      overflow: hidden;
+      
+      .slider-item {
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 480px;
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
+        transform: translate(0);
+
+        div {
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .slider__lines {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 40px;
+
+      .slider-line {
+        background-color: var(--border-primary-color);
+        height: 4px;
+        width: 40px;
+        border-radius: 100px;
+
+        &.slider-line--active {
+          background-color: var(--border-inverse-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+#dessert {
+  li:nth-child(1) {
+    .products-item__img {
+      background-image: url(./../../images/dessert-images/dessert-1.svg);
+    }
+  }
+
+  li:nth-child(2) {
+    .products-item__img {
+      background-image: url(./../../images/dessert-images/dessert-2.svg);
+    }
+  }
+  
+  li:nth-child(3) {
+    .products-item__img {
+      background-image: url(./../../images/dessert-images/dessert-3.svg);
+    }
+  }
+
+  li:nth-child(4) {
+    .products-item__img {
+      background-image: url(./../../images/dessert-images/dessert-4.svg);
+    }
+  }
+
+  li:nth-child(5) {
+    .products-item__img {
+      background-image: url(./../../images/dessert-images/dessert-5.svg);
+    }
+  }
+
+  li:nth-child(6) {
+    .products-item__img {
+      background-image: url(./../../images/dessert-images/dessert-6.svg);
+    }
+  }
+
+  li:nth-child(7) {
+    .products-item__img {
+      background-image: url(./../../images/dessert-images/dessert-7.svg);
+    }
+  }
+
+  li:nth-child(8) {
+    .products-item__img {
+      background-image: url(./../../images/dessert-images/dessert-8.svg);
+    }
+  }
+}    
