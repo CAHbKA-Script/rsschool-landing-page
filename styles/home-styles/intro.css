@@ -1,5 +1,5 @@
 .intro__container {
-  background-image: url(./../images/intro-images/img-hero.svg);
+  background-image: url(./../../images/intro-images/img-hero.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

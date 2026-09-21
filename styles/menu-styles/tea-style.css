@@ -1,0 +1,25 @@
+#tea {
+  li:nth-child(1) {
+    .products-item__img {
+      background-image: url(./../../images/tea-images/tea-1.svg);
+    }
+  }
+
+  li:nth-child(2) {
+    .products-item__img {
+      background-image: url(./../../images/tea-images/tea-2.svg);
+    }
+  }
+  
+  li:nth-child(3) {
+    .products-item__img {
+      background-image: url(./../../images/tea-images/tea-3.svg);
+    }
+  }
+
+  li:nth-child(4) {
+    .products-item__img {
+      background-image: url(./../../images/tea-images/tea-4.svg);
+    }
+  }
+}

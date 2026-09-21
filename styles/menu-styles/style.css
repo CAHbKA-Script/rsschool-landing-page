@@ -1,0 +1,9 @@
+@import url(./../home-styles/variable.css);
+@import url(./../home-styles/global.css);
+@import url(./../home-styles/header.css);
+@import url(./../home-styles/footer.css);
+@import url(./menu-style.css);
+@import url(./product-style.css);
+@import url(./coffee-style.css);
+@import url(./tea-style.css);
+@import url(./dessert-style.css);

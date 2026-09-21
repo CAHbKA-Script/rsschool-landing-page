@@ -37,19 +37,20 @@
 
     .slider-items {
       display: flex;
-      justify-content: center;
       gap: 40px;
-
-      .slider-item {
-        display: none;
-      }
+      max-width: 480px;
+      margin: 0 auto;
+      overflow: hidden;
       
-      .slider-item--active {
+      .slider-item {
+        flex: 0 0 100%;
         display: flex;
         flex-direction: column;
         gap: 16px;
         max-width: 480px;
         text-align: center;
+        transition: transform 0.5s ease-in-out;
+        transform: translate(0);
 
         div {
           margin-bottom: 4px;

@@ -1,0 +1,49 @@
+#coffee {
+  li:nth-child(1) {
+    .products-item__img {
+      background-image: url(./../../images/coffee-images/coffee-1.svg);
+    }
+  }
+
+  li:nth-child(2) {
+    .products-item__img {
+      background-image: url(./../../images/coffee-images/coffee-2.svg);
+    }
+  }
+  
+  li:nth-child(3) {
+    .products-item__img {
+      background-image: url(./../../images/coffee-images/coffee-3.svg);
+    }
+  }
+
+  li:nth-child(4) {
+    .products-item__img {
+      background-image: url(./../../images/coffee-images/coffee-4.svg);
+    }
+  }
+
+  li:nth-child(5) {
+    .products-item__img {
+      background-image: url(./../../images/coffee-images/coffee-5.svg);
+    }
+  }
+
+  li:nth-child(6) {
+    .products-item__img {
+      background-image: url(./../../images/coffee-images/coffee-6.svg);
+    }
+  }
+
+  li:nth-child(7) {
+    .products-item__img {
+      background-image: url(./../../images/coffee-images/coffee-7.svg);
+    }
+  }
+
+  li:nth-child(8) {
+    .products-item__img {
+      background-image: url(./../../images/coffee-images/coffee-8.svg);
+    }
+  }
+}    
