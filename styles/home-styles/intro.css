@@ -26,11 +26,15 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      transition: padding .3s ease-in-out;
+      color: var(--text-primary-color);
+      transition: color .3s ease-in-out,
+        background-color .3s ease-in-out,
+        padding .3s ease-in-out;
 
       .intro-info__button-cup {
         visibility: hidden;
         transition: visibility .3s ease-in-out;
+        stroke: var(--text-primary-color);
       }
 
       &:hover {

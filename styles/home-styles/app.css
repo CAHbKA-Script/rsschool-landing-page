@@ -27,6 +27,7 @@
           transition: color .3s ease-in-out;
 
           svg path {
+            fill: var(--text-primary-color);
             transition: fill .3s ease-in-out;
           }
 
@@ -38,6 +39,7 @@
         &:hover {
           background-color: var(--container-bgc);
           color: var(--text-inverse-color);
+          border-color: transparent;
 
           svg path {
             fill: var(--text-inverse-color);

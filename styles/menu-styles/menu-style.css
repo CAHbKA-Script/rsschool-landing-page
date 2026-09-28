@@ -1,4 +1,5 @@
-.menu {
+.menu,
+.popup {
   margin-bottom: 40px;
 
   h2 {
