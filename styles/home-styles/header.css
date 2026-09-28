@@ -5,14 +5,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     .logo svg {
       display: block;
+
+      path:not(:first-child) {
+        fill: var(--text-primary-color);
+        transition: stroke .3s ease-in-out;
+      }
     }
 
-    ul {
+    .header-links {
       display: flex;
       gap: 40px;
+      transition: gap .3s ease-in-out;
 
       a {
         padding-bottom: 4px;
@@ -26,6 +33,10 @@ header {
     .header__right-item {
       display: flex;
       gap: 24px;
+
+      .right-item__burger-menu {
+        display: none;
+      }
 
       .right-item__menu,
       .right-item__toggle {
@@ -50,14 +61,7 @@ header {
         border: 1px solid var(--border-primary-color);
         border-radius: 100px;
 
-        .toggle__sun {
-          padding: 7px;
-          background-color: var(--text-accent-color);
-          border-radius: 50%;
-        }
-
-        .toggle__moon {
-          padding: 9px;
+        >div {
           border-radius: 50%;
           transition: background .3s ease-in-out;
 
@@ -66,33 +70,134 @@ header {
           }
 
           &:hover {
-            background-color: var(--border-inverse-color);
+            background-color: var(  --toggle-hover-bgc);
 
             svg path {
               fill: var(--text-inverse-color);
             }
           }
+
+          &.toggle-active {
+            background-color: var(--text-accent-color);
+            
+            svg path {
+              fill: var(--text-inverse-color);
+            }
+          }
+        }
+
+        .toggle__sun {
+          padding: 7px;
+        }
+
+        .toggle__moon {
+          padding: 9px;
         }
       }
     }
 
     ul a,
     .right-item__menu {
-        position: relative;
+      position: relative;
+      color: var(--text-primary-color);
+      transition: color .3s ease-in-out;
 
-        &::after {
-          content: "";
-          position: absolute;
-          background-color: var(--text-primary-color);
-          height: 2px;
-          left: 0;
-          right: 100%;
-          transition: right .3s ease;
-        }
+      svg path {
+        stroke: var(--text-primary-color);
+        transition: stroke .3s ease-in-out;
+      }
 
-        &:hover::after {
-          right: 0;
-        }
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: var(--text-primary-color);
+        height: 2px;
+        left: 0;
+        right: 100%;
+        transition: right .3s ease;
+      }
+
+      &:hover::after {
+        right: 0;
+      }
     } 
   }
 }
+
+@media screen and (max-width: 850px) {
+  header .wrapper {
+    .header-links {
+      gap: 20px;
+    }
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  header .wrapper {
+    nav {
+      position: absolute;
+      display: flex;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--page-bgc);
+      z-index: 3;
+      padding: 222px 40px 362px 40px;
+      
+      .header-links  {
+        background-color: var(--page-bgc);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+      }
+    }
+
+    .header__right-item  {
+      .right-item__menu {
+        display: none;
+      }
+
+      .right-item__burger-menu {
+        display: block;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid var(--border-inverse-color);
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          background-color: var(--text-primary-color);
+          width: 16px;
+          height: 1.5px;
+          position: absolute;
+          left: 14px;
+        }
+
+        &::before {
+          top: 18px;
+        }
+
+        &::after {
+          bottom: 18px;
+        }
+
+        &.burger-menu--active {
+          &::before {
+            transform: rotate(45deg);
+            top: 20px;
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+            bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+} */

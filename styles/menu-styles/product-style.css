@@ -1,5 +1,23 @@
-.section--hidden {
-  display: none;
+.menu-section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transform: translateY(15px);
+  transition: visibility .5s ease,
+    transform .5s ease,
+    opacity .5s ease;
+
+  &.section--active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    height: 100%;
+  }
 }
 
 .products-items {
@@ -52,7 +70,7 @@
 
     &:hover {
       .products-item__img {
-        background-size: 120%;
+        background-size: 100%;
       }
     }
   }

@@ -7,6 +7,23 @@
   --overlay-bgc: #403F3DCC;
   --border-primary-color: #C1B6AD;
   --border-inverse-color: #665F55;
+  --toggle-hover-bgc: #665F55;
+  --popup-bgc: #403F3DCC;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary-color: #E1D4C9;
+    --text-inverse-color: #E1D4C9;
+    --text-accent-color: #B0907A;
+    --page-bgc: #292826;
+    --container-bgc: #403F3D;
+    --overlay-bgc: #292826CC;
+    --border-primary-color: #665F55;
+    --border-inverse-color: #C1B6AD;
+    --toggle-hover-bgc: #403F3D;
+    --popup-bgc: #292826CC;
+  }
 }
 
 body.dark-theme {
@@ -18,4 +35,6 @@ body.dark-theme {
   --overlay-bgc: #292826CC;
   --border-primary-color: #665F55;
   --border-inverse-color: #C1B6AD;
+  --toggle-hover-bgc: #403F3D;
+  --popup-bgc: #292826CC;
 }
